@@ -37,7 +37,7 @@ RUN apt-get update && apt-get build-dep -y \
     r-cran-rsqlite.extfuns \
     r-cran-xml 
 
-RUN install2.r -r http://bioconductor.org/packages/2.13/bioc \
+RUN install2.r -r http://bioconductor.org/packages/3.0/bioc \
     BiocInstaller \
 && rm -rf /tmp/downloaded_packages/
 
